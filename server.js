@@ -13,7 +13,8 @@ app.use(express.urlencoded({ extended: true }))
 
 mongoose.connect(process.env.DB_CONNECTION, 
     { useNewUrlParser: true },
-    () => { console.log('Connected to db! ') })
+    () => { console.log('Connected to db!') })
+    
 
 // Get Method
 app.get('/', async (req, res) => {
